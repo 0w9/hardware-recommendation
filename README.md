@@ -9,4 +9,6 @@ There's more and more people building in hardware. For that you need lots of com
 
 ## Stack
 
-Building this project, scaling needs to be in mind. The main goal is to reduce cost. So for the "RAG setup" we can use [LlamaIndex](https://www.llamaindex.ai) locally with [Ollama](https://ollama.com/). You can see more [here](https://docs.llamaindex.ai/en/stable/getting_started/starter_example_local/).
+Building this project, scaling needs to be in mind. The main goal is to reduce cost. So for the "RAG setup" we can use [LlamaIndex](https://www.llamaindex.ai) locally with [Ollama](https://ollama.com/). You can see more [here](https://docs.llamaindex.ai/en/stable/getting_started/starter_example_local/). For query we use the same, and to store the info there's a simple Postgre plugin called [pg_vector](https://github.com/pgvector/pgvector).
+
+The frontend can just be a simple NextJS app using LlamaIndex Typescript.
